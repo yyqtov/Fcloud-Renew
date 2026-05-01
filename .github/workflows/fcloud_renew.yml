@@ -3,7 +3,7 @@ name: Fcloud-Renew
 on:
   workflow_dispatch:
   schedule:
-    - cron: '47 5 * * *'   # 北京时间 09:00（UTC+8 → UTC 01:00）
+    - cron: '47 5 */2 * *'   # 北京时间 09:00（UTC+8 → UTC 01:00）
 
 jobs:
   run_fcloud_renew:
